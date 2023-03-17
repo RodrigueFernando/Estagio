@@ -21,8 +21,15 @@
     "valor":19.84953
 }];
 
-
 var relatorio = fatutamento.map(function(item) {
-    return ((item.valor *100)*30).toFixed(2);
+  return {
+    nome : item.nome,
+    valor :(( item.valor *100)*30).toFixed(2)
+  }
 });
-console.log(relatorio);
+
+
+
+relatorio.forEach(function(item){
+   console.log(`${item.nome} = ${item.valor}`)
+});
