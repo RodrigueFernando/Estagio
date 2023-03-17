@@ -22,7 +22,7 @@
 }];
 
 
-var relatorio = fatutamento.filter(function(item) {
+var relatorio = fatutamento.map(function(item) {
     return ((item.valor *100)*30).toFixed(2);
 });
 console.log(relatorio);
