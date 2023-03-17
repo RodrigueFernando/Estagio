@@ -1,6 +1,6 @@
 
 
- var fatutamento =[{
+ var faturamento =[{
      'nome':"Sp",
      "valor":67.83943
   } , 
@@ -21,14 +21,19 @@
     "valor":19.84953
 }];
 
-var relatorio = fatutamento.map(function(item) {
+var total = faturamento.reduce((total,atual)=>{
+        return total +(atual.valor + atual.valor) 
+},0);
+
+var relatorio = faturamento.map(function(item) {
   return {
     nome : item.nome,
-    valor :(( item.valor *100)*30).toFixed(2)
+    valor :(( item.valor *total)*100).toFixed(2)
   }
 });
 
 
+                  
 
 relatorio.forEach(function(item){
    console.log(`${item.nome} = ${item.valor}`)
