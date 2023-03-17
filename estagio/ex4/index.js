@@ -23,6 +23,6 @@
 
 
 var relatorio = fatutamento.map(function(item) {
-    return ((item.valor *100)*20).toFixed(2);
+    return ((item.valor *100)*30).toFixed(2);
 });
 console.log(relatorio);
