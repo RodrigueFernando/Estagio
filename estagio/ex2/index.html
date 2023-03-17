@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+      var num= 10;
+      var soma =0;
+      var anterior =0;
+      var proximo =1;
+      var count =0;
+
+       numero = prompt(" informe o numero");
+       numero = parseInt(numero);
+       
+      for(var i =0; i< num; i++){
+            soma = anterior + proximo;
+            anterior = proximo;
+            proximo = soma;
+        
+          if( numero === num){
+             count =1;
+          }
+       }
+
+       if( count != 0){
+         console.log("o numero informado  pertence a sequencia  ");
+       }else{
+         console.log("o número informado não pertence a sequencia  ");
+       }
+  
+
+      
+
+
+   
+     </script>
+    
+</body>
+</html>
